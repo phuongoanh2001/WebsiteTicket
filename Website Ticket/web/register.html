@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Website Ticket | Đăng ký</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery1.min.js"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script src="js/jquery.easydropdown.js"></script>
+</head>
+
+<body> 
+	<script type="text/javascript">
+		function validateForm()
+		{
+		var a = document.getElementById("username").value;
+		var b = document.getElementById("password").value;
+		var c = document.getElementById("confirmPasswordInput").value;
+		var d = document.getElementById("email").value;
+		var e = document.getElementById("coding").value;
+		var f = document.getElementById("class").value;
+		var g = document.getElementById("phone").value;
+		user = String(a);
+		pass = String(b);
+		confirmpassword = String(c);
+		email = String(d);
+		coding = String(e);
+		fclass = String(f);
+		phone = String(g);
+		if (user=="")
+		{
+		alert("Bạn cần nhập username !");
+		return false;
+		}
+		if(pass == "")
+		{
+			alert("Bạn cần nhập mật khẩu");
+			return false;
+		}
+		if(confirmpassword=='')
+		{
+		alert("Bạn cần xác nhận lại mật khẩu");
+		return false;
+		}
+		if(email=='')
+		{
+			alert("Bạn cần nhập email");
+			return false;
+		}
+		if(coding=='')
+		{
+			alert("Bạn cần nhập mã sinh viên");
+			return false;
+		}
+		if(fclass=='')
+		{
+			alert("Bạn cần nhập lớp");
+			return false;
+		}
+		if(phone=='')
+		{
+			alert("Bạn cần nhập số điện thoại");
+			return false;
+		}
+			alert("Đăng ký thành công");
+		}
+		</script>
+	     <div class="header-top">
+	   <div class="wrap"> 
+   			 </div>
+			 <div class="cssmenu">
+				<ul>
+					<li><a href="login.html">Đăng nhập</a></li> |
+					<li><a href="register.html">Đăng kí</a></li> 
+				</ul>
+			</div>
+			<div class="clear"></div>
+ 		</div>
+	</div>
+	<div class="header-bottom">
+	    <div class="wrap">
+			<div class="header-bottom-left">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo6.jpg" alt=""/></a>
+				</div>
+				<div class="menu">
+	            <ul class="megamenu skyblue">
+			<li class="active grid"><a href="index.html">TRANG CHỦ</a></li>
+			<li><a class="color4" href="#">LOẠI VÉ</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>VÉ THÁNG</h4>
+								<ul>
+									<li><a href="loaive.html">Vé xe tháng 1 - 3 </a></li>
+									<li><a href="loaive.html">Vé xe tháng 4 - 6</a></li>
+									<li><a href="loaive.html">Vé xe tháng 7 - 9</a></li>
+									<li><a href="loaive.html">Vé xe tháng 10 - 12</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>THẺ KỲ</h4>
+								<ul>
+									<li><a href="loaive.html">Thẻ kỳ I</a></li>
+									<li><a href="loaive.html">Thẻ Kỳ II</a></li>
+								</ul>	
+							</div>							
+						</div>
+					  </div>
+					</div>
+				</li>				
+				<li><a class="color5" href="#">THÔNG BÁO</a>
+				<div class="megapanel">
+					<div class="col1">
+							<div class="h_nav">
+								<h4>THÔNG BÁO VỀ NHÀ XE</h4>
+								<ul>
+									<li><a href="quydinh.html">QUY ĐỊNH</a></li>
+									<li><a href="thongbao.html">THÔNG BÁO</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>THÔNG BÁO VỀ GÓI VÉ</h4>
+								<ul>
+									<li><a href="theky_thang.html">THẺ KỲ_VÉ THÁNG</a></li>
+								</ul>	
+							</div>							
+						</div>
+					</div>
+				</li> 
+			</ul>
+			</div>
+		</div>
+	   <div class="header-bottom-right">
+         <div class="search">	  
+				<input type="text" name="s" class="textbox" value="Tìm kiếm" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+				<input type="submit" value="Subscribe" id="submit" name="submit">
+				<div id="response"> </div>
+		 </div>
+	  </div>
+    </div>
+     <div class="clear"></div>
+     </div>
+<!-- Tạo tài khoản -->
+	</div>
+          <div class="register_account">
+          	<div class="wrap">
+    	      <h4 class="title">TẠO TÀI KHOẢN </h4>
+    		   <form>
+    			 <div class="col_1_of_2 span_1_of_2">
+		   			 <div><input type="text" id="username" value="Tên hiển thị(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tên hiển thị(*)';}"></div>
+		    			<div><input type="text" id="password" value="Mật khẩu()" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mật khẩu(*)';}"></div>
+		    			<div><input type="text" id="confirmPasswordInput" value="Nhập lại mật khẩu(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nhập lại mật khẩu(*)';}"></div>
+		    			<div><input type="text"  id="email" value="Email(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email(*)';}"></div>
+		    	 </div>
+		    	  <div class="col_1_of_2 span_1_of_2">	
+		    		<div><input type="text"  id="coding" value="Mã sinh viên(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mã sinh viên(*)';}"></div>
+		    		<div><input type="text" id="class" value="Lớp(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Lớp(*)';}"></div>
+		         
+		          <div><input type="text" id="phone" value="SĐT(*)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'SĐT(*)';}"></div>
+		           <div>
+		          </div>
+		          	<input type="text" placeholder="Họ(*)" class="code"> + <input type="text" placeholder="Tên(*)" class="number">
+		          		<!-- <p class="code">Họ + Tên(*)</p> -->
+		          </div>
+				  <button class="grey" onclick="validateForm()" >ĐĂNG KÝ</button>
+		    <div class="clear"></div>
+		    </form>
+    	</div>
+    </div>
+    <div class="footer">
+		<div class="footer-top">
+			<div class="wrap">
+			  <div class="section group example">
+					<ul class="f-list">
+					</ul>
+				</div>
+				<div class="col_1_of_2 span_1_of_2">
+					<ul class="f-list">
+					  <li><img src="images/3.png"><span class="f-text">LIÊN HỆ VỚI CHÚNG TÔI KHI BẠN CẦN </span><div class="clear"></div></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		      </div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="wrap">
+		   <div class="section group example">
+			  <div class="col_1_of_f_1 span_1_of_f_1">
+				 <div class="section group example">
+				   <div class="col_1_of_f_2 span_1_of_f_2">
+				      <h3>Facebook</h3>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="like_box">	
+							<div class="fb-like-box" data-href="https://www.facebook.com/hotrosinhviendhkt" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+						</div>
+ 				  </div>
+				 <div class="col_1_of_f_2 span_1_of_f_2">
+				   <h3>Liên hệ</h3>
+						<div class="company_address">
+							<p>Địa chỉ: 71 Ngũ Hành Sơn, Đà Nẵng, Việt Nam</p>
+							<p>Số điện thoại: 0236 3953 773</p>
+							<p>Email: <span>hotrosinhvien@due.edu.vn</span></p>					   		
+					   </div>
+				</div>
+				<div class="clear"></div>
+		    </div>
+		   </div>
+		  <div class="clear"></div>
+		    </div>
+		  </div>
+		</div>
+	<!-- phần cuối cùng -->
+		<div class="footer-bottom">
+			<div class="wrap">
+	             <div class="copy">
+			        <p>© 2022 |<a href="#" target="_blank"> Website Ticket</a></p>
+		         </div>
+			    <div class="clear"></div>
+		      </div>
+	     </div>
+	</div>
+</body>
+</html>
